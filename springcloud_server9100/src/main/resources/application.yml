@@ -1,0 +1,14 @@
+##注册中心做成集群形式，注册地址要注册到其他的注册中心，即相互注册
+server:
+  port: 9100
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8100/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    hostname: 127.0.0.1
+spring:
+  application:
+    name: springcloud-eureka-server

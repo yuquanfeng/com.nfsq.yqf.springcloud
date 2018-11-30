@@ -8,6 +8,11 @@ eureka:
     fetch-registry: true
   instance:
     hostname: 127.0.0.1
+  server:
+    ##测试环境是关闭自我保护机制，保证不可用服务及时剔除
+    enable-self-preservation: false
+    ##剔除失效服务间隔2秒，即两秒剔除一次
+    eviction-interval-timer-in-ms: 2000
 spring:
   application:
     name: springcloud-eureka-server

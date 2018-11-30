@@ -1,11 +1,18 @@
 server:
-  port: 8081
+  port: 8089
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8100/eureka/,http://127.0.0.1:9100/eureka
+      defaultZone: http://127.0.0.1:8100/eureka/,http://127.0.0.1:9100/eureka/
     register-with-eureka: true
     fetch-registry: true
+    ##心跳检测与续约时间
+    ##测试时将值设置小点，保证服务关闭后注册中心能及时剔除服务
+  instance:
+    ##Eureka客户端想服务端发送心跳的时间间隔，单位为秒（客户端告诉服务端子机会按照规则发送心跳包）
+    lease-renewal-interval-in-seconds: 1
+    ##Eureka服务端在收到最后一次心跳后等待的时间上限，单位为秒，超过时间则剔除（告诉服务端按照此规则执行）
+    lease-expiration-duration-in-seconds: 2
 spring:
   application:
     name: springcloud-provider

@@ -10,6 +10,7 @@
         <module name="springcloud_provider" />
         <module name="springcloud_server8100" />
         <module name="springcloud_server9100" />
+        <module name="springcloud_service_zk" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +18,9 @@
       <module name="springcloud_provider" target="1.8" />
       <module name="springcloud_server8100" target="1.8" />
       <module name="springcloud_server9100" target="1.8" />
+      <module name="springcloud_service_zk" target="1.8" />
+      <module name="springcloud_service_zookeeper" target="1.8" />
+      <module name="springcloud_zk_consumer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

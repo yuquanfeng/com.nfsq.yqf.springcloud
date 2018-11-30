@@ -6,6 +6,7 @@
     <file url="file://$PROJECT_DIR$/springcloud_server8100" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud_server9100" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud_server9100/src/main/resources/application.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/springcloud_server_consul" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud_service_zk" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud_service_zookeeper" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud_zk_consumer" charset="UTF-8" />

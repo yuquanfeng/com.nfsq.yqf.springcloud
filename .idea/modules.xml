@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/springcloud_provider/springcloud_provider.iml" filepath="$PROJECT_DIR$/springcloud_provider/springcloud_provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud_server8100/springcloud_server8100.iml" filepath="$PROJECT_DIR$/springcloud_server8100/springcloud_server8100.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud_server9100/springcloud_server9100.iml" filepath="$PROJECT_DIR$/springcloud_server9100/springcloud_server9100.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_server_consul/springcloud_server_consul.iml" filepath="$PROJECT_DIR$/springcloud_server_consul/springcloud_server_consul.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud_service_zk/springcloud_service_zk.iml" filepath="$PROJECT_DIR$/springcloud_service_zk/springcloud_service_zk.iml" />
     </modules>
   </component>

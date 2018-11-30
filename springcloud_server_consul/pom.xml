@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.nfsq.yqf</groupId>
-    <artifactId>springcloud_service_zk</artifactId>
+    <artifactId>springcloud_server_consul</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>springcloud_service_zk</name>
+    <name>springcloud_server_consul</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -24,8 +24,6 @@
         <java.version>1.8</java.version>
     </properties>
 
-    <!-- 管理依赖  -->
-    <!--这是maven依赖版本管理器-->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -38,17 +36,7 @@
         </dependencies>
     </dependencyManagement>
     <dependencies>
-        <!--springcloud整合zookeeper-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zookeeper-config</artifactId>
-        </dependency>
-
+        <!-- SpringBoot整合Web组件 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -60,23 +48,13 @@
             <scope>test</scope>
         </dependency>
 
+        <!--SpringCloud consul-server -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
         </dependency>
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.cloud</groupId>-->
-        <!--<artifactId>spring-cloud-starter-eureka</artifactId>-->
-        <!--<version>1.4.0.RELEASE</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.cloud</groupId>-->
-        <!--<artifactId>spring-cloud-config-server</artifactId>-->
-        <!--<version>1.4.3.RELEASE</version>-->
-        <!--</dependency>-->
     </dependencies>
-
-    <!-- 注意： 这里必须要添加， 否者各种依赖有问题  -->
+    <!-- 注意： 这里必须要添加， 否者各种依赖有问题 -->
     <repositories>
         <repository>
             <id>spring-milestones</id>
@@ -96,6 +74,7 @@
             </plugin>
         </plugins>
     </build>
+
 
 
 </project>
